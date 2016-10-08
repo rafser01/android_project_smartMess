@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+
+    android:padding="@dimen/fab_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+
+            />
+        <EditText
+            android:layout_width="@dimen/input_field_width"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+
+            android:id="@+id/custom_dialog_deposit_input_date"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:text="@string/deposit"
+            />
+        <EditText
+            android:layout_width="@dimen/input_field_width"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:id="@+id/custom_dialog_deposit_input_deposit"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/custom_dialog_cancel_btn"
+            android:text="@string/btn_clear"
+            />
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_dialog_btn_submit"
+            android:layout_alignParentRight="true"
+            android:text="@string/btn_submit"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fab_margin"
+    tools:context="com.example.hp.smartmess2.Meal_Edit">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:text="@string/breakFast"
+                />
+            <EditText
+                android:layout_width="@dimen/_60DP"
+                android:layout_height="wrap_content"
+                android:id="@+id/meal_edit_input_breakfast"
+                android:editable="false"
+                />
+            <Spinner
+                android:layout_width="@dimen/_32dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/meal_edit_spin_breakFast"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:text="@string/lunch"
+                />
+            <EditText
+                android:layout_width="@dimen/_60DP"
+                android:layout_height="wrap_content"
+                android:id="@+id/meal_edit_input_lunch"
+                android:editable="false"
+                />
+            <Spinner
+                android:layout_width="@dimen/_32dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/meal_edit_spin_lunch"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:text="@string/dinner"
+                />
+            <EditText
+                android:layout_width="@dimen/_60DP"
+                android:layout_height="wrap_content"
+                android:id="@+id/meal_edit_input_dinner"
+                android:editable="false"
+                />
+            <Spinner
+                android:layout_width="@dimen/_32dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/meal_edit_spin_dinner"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60DP"
+
+            >
+            <Button
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyButton"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/meal_edit_btn_reset"
+                android:text="@string/reset"
+
+                />
+            <Button
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyButton"
+                android:text="@string/back"
+                android:id="@+id/meal_edit_btn_back"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyButton"
+                android:layout_alignParentRight="true"
+                android:id="@+id/meal_edit_btn_submit"
+                android:text="@string/btn_submit"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

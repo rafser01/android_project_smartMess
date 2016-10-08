@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">SmartMess2</string>
+    <string name="guest">Guest</string>
+    <string name="user">User</string>
+    <string name="login">Login</string>
+    <string name="inputName">Enter Name</string>
+    <string name="inputEmail">Enter Valid Email</string>
+    <string name="greenColor">#128E6E</string>
+    <string name="registration">Registration</string>
+
+    <string name="id">ID</string>
+
+    <string name="choose">Choose..</string>
+
+    <string name="btn_clear">Clear</string>
+    <string name="btn_submit">Submit</string>
+
+
+    <string name="date_picker">Pick</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="password">Password</string>
+    <string name="dob">Date of Birth</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mess_name">Mess Name</string>
+    <string name="date">Date</string>
+    <string name="breakFast">BreakFast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="reset">Reset</string>
+    <string name="back">Back</string>
+    <string name="monthly_deposit">Monthly Deposit</string>
+    <string name="balance">Balance</string>
+    <string name="add_deposit">Add Deposit</string>
+    <string name="_1">1</string>
+    <string name="_0.5">0.5</string>
+    <string name="deposit">Deposit</string>
+    <string name="year_mm_dd">Year-MM-DD</string>
+    <string name="house_rent">House Rent</string>
+    <string name="utility">Utility</string>
+    <string name="servent_bill">Servent Bill</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="deduction_type">Deduction Type</string>
+    <string name="amount">Amount</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

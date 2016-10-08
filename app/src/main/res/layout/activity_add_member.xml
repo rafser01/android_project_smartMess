@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/clemson_logo_sports"
+     >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/add_member_toolbar"
+        android:background="@color/colorPrimary"
+
+
+        ></android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/fab_margin"
+        android:orientation="vertical"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_member_user"
+
+        android:hint="@string/user"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_member_input_email"
+        android:hint="@string/inputEmail"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/add_member_sex_group"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_member_radio_male"
+            android:text="@string/male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_member_radio_female"
+            android:text="@string/female"/>
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyButton"
+            android:id="@+id/add_member_btn_reset"
+            android:layout_alignParentLeft="true"
+            android:text="@string/reset"
+            android:onClick="resetOnAddMember"
+            />
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyButton"
+            android:id="@+id/add_member_btn_submit"
+            android:text="@string/btn_submit"
+            android:onClick="submitOnAddMember"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/login_toolbar"
+        android:background="@color/colorPrimary"
+
+
+        ></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/fab_margin"
+        android:orientation="vertical"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_input_email"
+        android:layout_marginTop="@dimen/nav_magin_top"
+        android:hint="@string/inputEmail"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_input_password"
+        android:hint="@string/password"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/line_margin"
+
+        >
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:theme="@style/MyButton"
+            android:id="@+id/login_btn_registration"
+            android:layout_alignParentLeft="true"
+
+            android:onClick="registration"
+
+            />
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:theme="@style/MyButton"
+            android:id="@+id/login_btn_Login"
+            android:layout_alignParentRight="true"
+            android:onClick="login"
+
+            />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

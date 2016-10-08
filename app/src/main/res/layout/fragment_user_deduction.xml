@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fab_margin"
+    tools:context=".user_deduction">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            >
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:text="@string/house_rent"
+
+                />
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/deduction_house_rent"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            >
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:text="@string/utility"
+
+                />
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/deduction_utility"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            >
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:text="@string/servent_bill"
+
+                />
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/deduction_servent_bill"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            >
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:text="@string/maintenance"
+
+                />
+            <TextView
+                android:layout_width="@dimen/input_field_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/deduction_maintenance_cost"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            >
+            <Spinner
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/deduction_spinner"
+                ></Spinner>
+            <EditText
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/deduction_input_amount"
+                />
+            <Button
+                android:layout_width="@dimen/lable_width"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyButton"
+                android:id="@+id/deduction_btn_add"
+                android:text="@string/btn_submit"
+                />
+
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deduction_withdraw"
+            ></ListView>
+    </LinearLayout>
+
+</FrameLayout>

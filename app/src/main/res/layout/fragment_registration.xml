@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/registration_toolbar"
+        android:background="@color/colorPrimary"
+
+
+        ></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/fab_margin"
+        android:orientation="vertical"
+        >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_input_user"
+
+        android:hint="@string/user"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_input_email"
+        android:hint="@string/inputEmail"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_input_pass"
+        android:hint="@string/password"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="@dimen/input_field_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_input_dob"
+            android:editable="false"
+            android:hint="@string/dob"
+            />
+        <Button
+            android:layout_width="@dimen/_60DP"
+            android:layout_height="wrap_content"
+            android:text="@string/date_picker"
+            android:id="@+id/reg_date_picker"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/reg_radioGroup_sex"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_radio_male"
+                android:text="@string/male"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_radio_female"
+                android:text="@string/female"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="@dimen/nav_width"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:id="@+id/reg_input_firstName"
+            />
+        <EditText
+            android:layout_width="@dimen/nav_width"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:id="@+id/reg_input_lastName"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_input_messName"
+        android:hint="@string/mess_name"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyButton"
+            android:text="@string/btn_clear"
+            android:id="@+id/reg_btn_clear"
+            android:layout_alignParentLeft="true"
+
+            />
+        <Button
+            android:layout_width="@dimen/lable_width"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyButton"
+            android:text="@string/btn_submit"
+            android:id="@+id/reg_btn_submit"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
